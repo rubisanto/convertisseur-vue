@@ -2,17 +2,34 @@
 import { RouterLink, RouterView } from 'vue-router'
 import HeaderComponent from './components/HeaderComponent.vue'
 import FooterComponent from './components/FooterComponent.vue'
+import NavComponent from './components/NavComponent.vue'
+import ResultSlot from './components/ResultSlot.vue'
 
 </script>
 
 <template>
   <HeaderComponent />
+  <NavComponent />
+
   <main>
+    <RouterView />
+
     
+      
 
   </main>
   <FooterComponent />
 </template>
+
+<script>
+// appel d'api pour récupérer les devises
+import { ref, onMounted } from 'vue'
+import axios from 'axios'
+
+export default {
+  name: 'HomeView',
+  }
+</script>
 
 <style scoped>
 header {

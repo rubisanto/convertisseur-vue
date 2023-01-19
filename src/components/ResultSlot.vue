@@ -1,7 +1,7 @@
 <template>
     <div>
       <!-- contenu du composant -->
-      <slot name="result" v-text="result"></slot>
+      <slot name="result"  >Le résultat est : {{ result }} </slot>
     </div>
 </template>
 
