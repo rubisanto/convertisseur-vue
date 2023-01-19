@@ -7,6 +7,10 @@ import FooterComponent from './components/FooterComponent.vue'
 
 <template>
   <HeaderComponent />
+  <main>
+    
+
+  </main>
   <FooterComponent />
 </template>
 
